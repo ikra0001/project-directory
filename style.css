@@ -1,0 +1,68 @@
+.grid {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 0.2fr);
+    grid-template-areas:
+      "header header header header header header"
+      "main main main main main main"
+      "footer footer footer footer footer footer"
+}
+
+header {
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: span 6;
+}
+
+.logo {
+}
+
+.scooter-graphic {
+}
+
+main {
+    display: flex;
+    margin-bottom: 2em;
+    grid-area: main;
+}
+
+.wrapper {
+    width: 30%;
+}
+
+.banner-text p {
+    width: 60%;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+.graphic {
+    width: 800px;
+}
+
+.card-form {
+    padding: 1em;
+    margin-right: 2em;
+    border-radius: 26px;
+    box-shadow: 3px 3px 3px 3px #33313165;
+
+}
+
+footer {
+ display: flex;
+}
+
+.btn-drive {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 11px;
+    background-color: #57EEAB;
+    padding: 0.5em;
+}
