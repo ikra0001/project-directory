@@ -1,7 +1,8 @@
+/***AN ATTEMPT TO MAKE THE FOOTER COVER THE BOTTOM, STILL RESTRICTED BY GRID CLASS***/
 html,body {
     min-height: 100vh
 }
-
+/***3ROWX3COLUMN CENTERED CONTAINER***/
 .grid {
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
@@ -18,16 +19,16 @@ html,body {
 header {
     grid-area: header;
 }
-
+/***MAIN SECTION FOR THE 3 ELEMENTS***/
 main {
     display: flex;
     flex-direction: row;
     margin-bottom: 2em;
     grid-area: main;
 }
-
+/***LIMIT SIZE FOR MAIN BANNER HEADING TO MAINTAIN THE ORIGINAL LOOK OF THE TEXT THROUGHOUT***/
 .wrapper {
-    width: 500px;
+    max-width: 500px;
 }
 
 h1 {
@@ -74,7 +75,7 @@ h2 {
     padding: 0.5em;
     margin-top: 0.5em;
 }
-
+/***SOLE CARD LINK THAT NEEDED COLOUR CHANGE***/
 .link {
     text-decoration: none;
     color: #FF8480;
@@ -91,7 +92,7 @@ h2 {
     align-items: center;
     margin-top: 1em;
 }
-
+/***FOOTER'S SMALL FORM SECION***/
 .calculate-form{
     width: 87%;
 }
@@ -99,7 +100,7 @@ h2 {
 .calculate-form p{
     margin: 0.25em;
 }
-
+/***SEPARATE CLASSES FOR THE DIFFERENT INPUT SIZES***/
 .calc-input1 {
     font-family: 'Montserrat', sans-serif;
     border-radius: 7px;
@@ -132,7 +133,7 @@ h2 {
     font-size: 18px;
     font-weight: bold;
 }
-
+/***THE SOCIAL MEDIA ICONS DIV FOR FLEX***/
 .social-icons {
     order: 2;
     margin: 0 auto;
@@ -141,7 +142,7 @@ h2 {
 .icon {
     margin: 8px;
 }
-
+/***TABLET AND PHONE QUERY, CHANGING AREAS AND GRID DIRECTION***/
 @media only screen and (max-width: 1248px) {
     .grid {
         margin: 0 auto;
@@ -157,31 +158,26 @@ h2 {
           "main"
           "main"
           "footer"
-}
+    }
 
-main {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2em;
-    grid-area: main;
-}
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+        grid-area: main;
+    }
 
-.graphic {
-    align-self: center;
-    width: 400px;
-    margin-bottom: 1em;
-}
+    .graphic {
+        align-self: center;
+        width: 400px;
+        margin-bottom: 1em;
+    }
 
-#footer {
-    flex-direction: column;
-}
+    #footer {
+        flex-direction: column;
+    }
 
-.social-icons {
-    margin: 1em;
-}
-
-@media only screen and (max-width: 480px) {
-    .btn-calc {
-        width: 100%;
+    .social-icons {
+        margin: 1em;
     }
 }
