@@ -17,16 +17,13 @@ header {
 
 main {
     display: flex;
+    flex-direction: row;
     margin-bottom: 2em;
     grid-area: main;
 }
 
 .wrapper {
-    width: 30%;
-}
-
-.banner-text p {
-    width: 60%;
+    width: 450px;
 }
 
 h1 {
@@ -58,7 +55,8 @@ h2 {
     margin-bottom: 0.7em;
     padding: 12px;
     font-family: 'Montserrat', sans-serif;
-    border: 2px solid black;
+    font-size: 1em;
+    color: #33313170;
 }
 
 .btn-drive {
@@ -72,31 +70,101 @@ h2 {
     margin-top: 0.5em;
 }
 
+.link {
+    text-decoration: none;
+    color: #FF8480;
+}
+
 #footer {
-    width: 100%;
-    background-color: #FFFD8C;
     grid-area: footer;
     display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1em;
+    background-color: #FFFD8C; 
+    justify-content: stretch;
+    align-items: center;
 }
 
 .calculate-form{
-    width: 30%;
+    width: 87%;
 }
 
 .calculate-form p{
     margin: 0.25em;
 }
 
-.calc {
-    width: 30%;
+.calc-input1 {
+    border-radius: 7px;
+    width: 80px;
+    padding: 3px;
+    border: none;
+}
+
+.calc-input2 {
+    border-radius: 7px;
+    width: 125px;
+    padding: 3px;
+    border: none;
 }
 
 .btn-calc {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     font-weight: bold;
+    color: white;
+    border: none;
     border-radius: 11px;
     background-color: #FF8480;
-    padding: 0.5em;
-    margin-top: 0.5em;
+    padding: 2px 1em;
+    margin-top: 0;
 }
+
+.social-icons {
+    order: 2;
+    margin: 0 auto;
+}
+
+.icon {
+    margin: 8px;
+}
+
+@media only screen and (max-width: 1248px) {
+    .grid {
+        margin: 0 auto;
+        font-family: 'Montserrat', sans-serif;
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 0.1fr);
+        grid-template-areas:
+          "header "
+          "main"
+          "main"
+          "main"
+          "main"
+          "footer"
+}
+
+header {
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    grid-area: main;
+}
+
+.graphic {
+    align-self: center;
+    width: 400px;
+}
+
+.form-input {
+    align-self: center;
+}
+
+
+@media only screen and (max-width: 480px)
