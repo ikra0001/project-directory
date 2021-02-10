@@ -13,8 +13,6 @@
 
 header {
     grid-area: header;
-    grid-column-start: 1;
-    grid-column-end: span 6;
 }
 
 main {
@@ -32,6 +30,7 @@ main {
 }
 
 h1 {
+    margin: 0;
     font-size: 72px;
 }
 
@@ -40,15 +39,26 @@ h1 {
 }
 
 .card-form {
-    padding: 1em;
-    margin-right: 2em;
+    padding: 2em;
     border-radius: 26px;
     box-shadow: 3px 3px 3px 3px #33313165;
-
 }
 
-footer {
- display: flex;
+h2 {
+    margin-bottom: 0;
+    font-size: 40px;
+}
+
+.form-input {
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    border-radius: 11px;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+    padding: 12px;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid black;
 }
 
 .btn-drive {
@@ -59,4 +69,34 @@ footer {
     border-radius: 11px;
     background-color: #57EEAB;
     padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+#footer {
+    width: 100%;
+    background-color: #FFFD8C;
+    grid-area: footer;
+    display: flex;
+}
+
+.calculate-form{
+    width: 30%;
+}
+
+.calculate-form p{
+    margin: 0.25em;
+}
+
+.calc {
+    width: 30%;
+}
+
+.btn-calc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 11px;
+    background-color: #FF8480;
+    padding: 0.5em;
+    margin-top: 0.5em;
 }
