@@ -17,12 +17,6 @@ header {
     grid-column-end: span 6;
 }
 
-.logo {
-}
-
-.scooter-graphic {
-}
-
 main {
     display: flex;
     margin-bottom: 2em;
